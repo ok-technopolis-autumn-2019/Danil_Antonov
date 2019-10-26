@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>todo</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h1>todos</h1>
-	<div class="content">
-		<div class="picker">
-			<ul>
-				<li><input type="text" name="input" placeholder="What needs to be done?" class="search"></li>
-				<li class="checkers">
-					<div class="elements">
-						<p><input type="checkbox" name="html">CSS</p>
-						<button>X</button>
+	<head>
+		<title>Todos</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="todo-app">
+
+			<header class="todo-app-header">
+				todos
+			</header>
+
+			<div class="todo-app-frame">
+
+				<section class="main">
+					<div class="two_input">
+						<input class="input_header" type="text" placeholder="What needs to be done?">
+						<button class="button-select"></button>
 					</div>
-				</li>
-				<li class="checkers">
-					<div class="elements">
-						<p><input type="checkbox" name="html">HTML</p>
-						<button>X</button>
+				</section>
+
+				<section class="tasks">
+					<ul>
+						<li class="html">
+							<div>
+								<input type="checkbox" class="input-task">
+								<span>HTML</span>
+								<button class="delete"></button>
+							</div>
+						</li>
+
+						<li class="css">
+							<div>
+								<input type="checkbox" checked="checked" class="input-task">
+								<span>CSS</span>
+								<button class="delete"></button>
+							</div>
+						</li>
+
+						<li class="js">
+							<div>
+								<input type="checkbox" class="input-task">
+								<span>JS</span>
+								<button class="delete"></button>
+							</div>
+						</li>
+
+						<li class="js_tools">
+							<div>
+								<input type="checkbox" class="input-task" name="haha">
+								<span>JS tools</span>
+								<button class="delete"></button>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section class="todo-app-footer">
+						<div class="items_left">3 items left</div>
+					<div class="buttons">
+							<label class="button_1">
+								<input type="radio" name="button_footer" checked="checked">
+								<span class="button_footer">All</span>
+							</label>
+							<label class="button_2">
+								<input type="radio" name="button_footer">
+								<span class="button_footer">Active</span>
+							</label>
+							<label class="button_3">
+								<input type="radio" name="button_footer">
+								<span class="button_footer">Completed</span>
+							</label>
 					</div>
-				</li>
-				<li class="checkers">
-					<div class="elements">
-						<p><input type="checkbox" name="html">JS</p>
-						<button>X</button>
+
+					<div class="button_completed">
+						<label>
+							<span class="button_footer">Clear completed</span>
+						</label>
 					</div>
-				</li>
-				<li class="checkers">
-					<div class="elements">
-						<p><input type="checkbox" name="html">JStools</p>
-						<button>X</button>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="botOfContent">
-			<button>3 items left</button>
-			<div>
-				<input type="radio" name="bottom" class="active">All</input>
-				<input type="radio" name="bottom">Active</input>
-				<input type="radio" name="bottom">Complited</input>
+
+				</section>
+
 			</div>
-			<button>Clear complited</button>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
